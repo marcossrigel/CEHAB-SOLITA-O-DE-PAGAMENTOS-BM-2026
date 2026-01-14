@@ -93,9 +93,9 @@ def enviar_msg_whatsapp(texto, telefone):
 
     webbrowser.open(url)
     time.sleep(ESPERA_CARREGAR_WHATSAPP)
-
+    pyautogui.press("enter")
     time.sleep(ESPERA_APOS_ENVIAR)
-
+    
     pyautogui.hotkey("ctrl", "w")
 
 def processar_liberados(ws_bms, contatos_por_diretoria):
